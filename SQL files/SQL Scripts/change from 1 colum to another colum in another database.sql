@@ -1,0 +1,1 @@
+INSERT INTO GM_Stuff.dbo.BannedIP(IP1) SELECT banIP FROM PS_UserData.dbo.BannedIPs

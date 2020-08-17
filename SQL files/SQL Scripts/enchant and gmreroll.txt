@@ -1,0 +1,24 @@
+00>Str 00>Dex 00>Rec 00>Int 00>Wis 00>Luc 00>HP 00>MP 00>SP 00>Enchant
+
+*Edit* If you set a value at say in example for STR "09" you are only adding +9 EP4 to the item, "12" would be +12 etc. For the HP, MP, SP "09" would be equal to +900
+
+Originally Posted by whiteyadam View Post
+Ok so ive seen this question asked alot and nobody has really answered it. Most of the answers are "use GM lapasia" or "edit the ini files it cant be done in the DB". Im here to tell you it can and this is how.
+
+
+This first section is for weapons only although you can use it on armour and get some insane attack
+
+
+1)Open SQL server management studio
+2)Open Gamedata DB and select the char items table
+3)Find the item you want to edit and scroll across to craftname
+4)The last two digits in craftname are the ones for enchant so for example my dark seed axes look like this 00000514000600000020.
+
+The 20 at the end means it is enchanted to 20 you can change this number to whatever you want (i havnt tested 99 or anything but 1-20 works fine)
+
+Ok to enchant armour its exactly the same except instead of editing the last two digits in between 1 and 20 you need to edit them inbetween 50 and 70 For example my [20] Ada walkers look like this
+02030000000000000070 where as my [6] mufflers look like this 02030000000000000056
+
+As you can see 70 = 20 armour enchant where as 56 = 6 armour enchant
+
+Hope this helps some people
